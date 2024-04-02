@@ -6,20 +6,20 @@ using UnityEngine;
 namespace Ultrakill64
 {
     [HarmonyPatch]
-    [BepInPlugin(ConstInfo.GUID, ConstInfo.NAME, ConstInfo.VERSION)]
+    [BepInPlugin(GUID, NAME, VERSION)]
     public class Plugin : BaseUnityPlugin
     {
         private Harmony harmony;
 
         private static ConfigEntry<bool> enableFiltering;
         public const string NAME = "Ultrakill64";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.1";
         public const string GUID = "Hydraxous.ULTRAKILL.Ultrakill64";
 
         private void Awake()
         {
             // Plugin startup logic
-            harmony = new Harmony(ConstInfo.GUID);
+            harmony = new Harmony(GUID);
             harmony.PatchAll();
             
             enableFiltering = Config.Bind("General", "Enabled", true, "Enable N64 texture filtering");

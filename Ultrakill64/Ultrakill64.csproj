@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Ultrakill64</AssemblyName>
-    <Description>My first plugin</Description>
-    <Version>1.0.0</Version>
+    <Description>N64 Texture filtering enabler</Description>
+    <Version>1.0.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
